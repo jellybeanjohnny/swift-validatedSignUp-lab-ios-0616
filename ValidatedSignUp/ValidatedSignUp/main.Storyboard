@@ -58,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="30" id="4mH-Ba-wK6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I50-a8-2vB">
                                 <rect key="frame" x="145" y="419" width="310" height="67"/>
@@ -70,6 +70,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="uC3-1d-UKF" eventType="touchUpInside" id="I5w-z0-191"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -106,10 +109,18 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="iEG-2m-S7q" id="ZkY-E9-lfv"/>
+                        <outlet property="firstNameTextField" destination="PEH-Ca-1lh" id="UuE-xw-Sdv"/>
+                        <outlet property="lastNameTextField" destination="afg-Cl-HbV" id="3Ks-Gl-edC"/>
+                        <outlet property="passwordTextField" destination="eow-Z9-bNG" id="aGa-i3-6hv"/>
+                        <outlet property="submitButton" destination="I50-a8-2vB" id="gYn-eP-dkl"/>
+                        <outlet property="usernameTextField" destination="Ok9-R3-Aqh" id="Vit-aN-UIu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSc-YJ-aRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="499"/>
+            <point key="canvasLocation" x="317" y="375"/>
         </scene>
     </scenes>
     <resources>
